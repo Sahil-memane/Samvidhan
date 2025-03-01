@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bill to Law Simulation</title>
+        <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+            margin: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"], textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #357ABD;
+        }
+
+        #committeeFeedback, #debateSummary, #resultMessage {
+            padding: 10px;
+            background-color: #eaf4ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .error {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Bill to Law Simulation</h1>
+            <div id="stage-drafting">
+                <h2>Stage 1: Draft Your Bill</h2>
+                <form id="billForm">
+                    <label for="billTitle">Bill Title:</label>
+                    <input type="text" id="billTitle" required>
+                    <label for="billDescription">Bill Description:</label>
+                    <textarea id="billDescription" rows="4" required></textarea>
+                    <button type="submit">Submit Bill</button>
+                    <p id="error-message" class="error"></p>
+                </form>
+            </div>
+            <div id="stage-review" class="hidden">
+                <h2>Stage 2: Committee Review</h2>
+                <p id="committeeFeedback"></p>
+                <button id="reviseBill">Revise Bill</button>
+                <button id="passReview">Pass Review</button>
+            </div>
+            <div id="stage-debate" class="hidden">
+                <h2>Stage 3: Debate</h2>
+                <p id="debateSummary"></p>
+                <button id="startDebate">Start Debate</button>
+            </div>
+            <div id="stage-voting" class="hidden">
+                <h2>Stage 4: Voting</h2>
+                <button id="voteForBill">Vote For Bill</button>
+                <button id="voteAgainstBill">Vote Against Bill</button>
+            </div>
+            <div id="result" class="hidden">
+                <h2>Result</h2>
+                <p id="resultMessage"></p>
+            </div>
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const billForm = document.getElementById('billForm');
+            const billTitle = document.getElementById('billTitle');
+            const billDescription = document.getElementById('billDescription');
+            const committeeFeedback = document.getElementById('committeeFeedback');
+            const reviseBill = document.getElementById('reviseBill');
+            const passReview = document.getElementById('passReview');
+            const debateSummary = document.getElementById('debateSummary');
+            const startDebate = document.getElementById('startDebate');
+            const voteForBill = document.getElementById('voteForBill');
+            const voteAgainstBill = document.getElementById('voteAgainstBill');
+            const resultMessage = document.getElementById('resultMessage');
+            const errorMessage = document.getElementById('error-message');
+
+            function isValidBill(title, description) {
+                const titleLength = title.trim().length;
+                const descriptionLength = description.trim().length;
+                return titleLength >= 5 && descriptionLength >= 20;
+            }
+
+            // Stage 1: Draft Your Bill
+            billForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const title = billTitle.value;
+                const description = billDescription.value;
+
+                if (isValidBill(title, description)) {
+                    errorMessage.textContent = '';
+                    document.getElementById('stage-drafting').classList.add('hidden');
+                    document.getElementById('stage-review').classList.remove('hidden');
+                    committeeFeedback.textContent = `The bill titled "${title}" has been submitted for review.`;
+                } else {
+                    errorMessage.textContent = 'Error: Bill Title must be at least 5 characters long and Description must be at least 20 characters long.';
+                }
+            });
+
+            // Stage 2: Committee Review
+            reviseBill.addEventListener('click', () => {
+                document.getElementById('stage-drafting').classList.remove('hidden');
+                document.getElementById('stage-review').classList.add('hidden');
+            });
+
+            passReview.addEventListener('click', () => {
+                document.getElementById('stage-review').classList.add('hidden');
+                document.getElementById('stage-debate').classList.remove('hidden');
+                debateSummary.textContent = `The bill titled "${billTitle.value}" has passed the committee review and is now ready for debate.`;
+            });
+
+            // Stage 3: Debate
+            startDebate.addEventListener('click', () => {
+                document.getElementById('stage-debate').classList.add('hidden');
+                document.getElementById('stage-voting').classList.remove('hidden');
+            });
+
+            // Stage 4: Voting
+            voteForBill.addEventListener('click', () => {
+                document.getElementById('stage-voting').classList.add('hidden');
+                document.getElementById('result').classList.remove('hidden');
+                resultMessage.textContent = `Congratulations! The bill titled "${billTitle.value}" has passed the vote and is now a law.`;
+            });
+
+            voteAgainstBill.addEventListener('click', () => {
+                document.getElementById('stage-voting').classList.add('hidden');
+                document.getElementById('result').classList.remove('hidden');
+                resultMessage.textContent = `The bill titled "${billTitle.value}" did not pass the vote. Better luck next time.`;
+            });
+        });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+{
+  "module": "Indian Legislature Awareness",
+  "questions": [
+    {
+      "question": "What are the two houses of the Indian Parliament?",
+      "options": [
+        "A. Lok Sabha and Rajya Sabha",
+        "B. House of Commons and House of Lords",
+        "C. Senate and House of Representatives",
+        "D. Assembly and Council"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "Which house of the Indian Parliament is directly elected by the people?",
+      "options": [
+        "A. Rajya Sabha",
+        "B. Lok Sabha",
+        "C. Vidhan Sabha",
+        "D. Vidhan Parishad"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What is the primary function of the Legislature in India?",
+      "options": [
+        "A. To enforce laws",
+        "B. To interpret laws",
+        "C. To make laws",
+        "D. To conduct elections"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "Which of the following is NOT a function of the Indian Legislature?",
+      "options": [
+        "A. Law-making",
+        "B. Representing the electorate",
+        "C. Monitoring the Executive",
+        "D. Conducting judicial trials"
+      ],
+      "correctOption": 4,
+      "points": 20
+    },
+    {
+      "question": "How many sessions does the Indian Parliament typically have in a year?",
+      "options": [
+        "A. One",
+        "B. Two",
+        "C. Three",
+        "D. Four"
+      ],
+      "correctOption": 3,
+      "points": 20
+    }
+  ]
+}

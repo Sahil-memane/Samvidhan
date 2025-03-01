@@ -1,0 +1,2 @@
+frontend/.next/cache/webpack/client-development/19.pack.gz filter=lfs diff=lfs merge=lfs -text
+frontend/node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node filter=lfs diff=lfs merge=lfs -text

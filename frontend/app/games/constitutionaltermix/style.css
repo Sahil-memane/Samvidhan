@@ -1,0 +1,238 @@
+html {
+  padding: 10px;
+  margin: 10px;
+  background-color: wheat;
+}
+
+#indicator {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: navy;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+#root {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hangstand {
+  width: 40vw;
+  position: relative;
+}
+
+.buttons-parent {
+  width: 50%;
+  padding-right: 6%;
+  display: grid;
+  height: 60vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+button {
+  background-color: #ff9933;
+  /* Saffron color */
+  border: none;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 2px;
+  width: 60px;
+  height: 60px;
+  margin: 5px 8px;
+  padding: 6px 10px;
+  color: white;
+}
+
+button:hover {
+  background-color: #e67e22;
+  cursor: pointer;
+}
+
+.greenBtn,
+.greenBtn:hover {
+  background-color: #138808;
+  /* Flag green */
+  color: white;
+}
+
+.redBtn,
+.redBtn:hover {
+  background-color: #e03131;
+
+  /* Red variant */
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+span {
+  display: none;
+}
+
+p {
+  color: navy;
+  height: fit-content;
+  width: fit-content;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 2px solid navy;
+  height: 40px;
+  width: 40px;
+}
+
+.blanks_parent {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.class-1 {
+  height: 10px;
+  width: 80%;
+  left: 20px;
+  background: navy;
+  position: absolute;
+  bottom: 8%;
+}
+
+.class-2 {
+  height: 10px;
+  width: 90vh;
+  top: 46vh;
+  background: navy;
+  position: absolute;
+  right: 197px;
+  transform: rotate(90deg);
+}
+
+.class-3 {
+  height: 10px;
+  width: 50%;
+  left: 20px;
+  background: navy;
+  position: absolute;
+  top: 1.7%;
+}
+
+.class-4 {
+  height: 5px;
+  width: 15vh;
+  top: 9.8vh;
+  background: navy;
+  position: absolute;
+  right: 198px;
+  transform: rotate(90deg);
+}
+
+.class-5 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background-color: navy;
+  left: 212px;
+  top: 114px;
+  border-radius: 50%;
+}
+
+.class-6 {
+  height: 10px;
+  width: 28vh;
+  top: 46vh;
+  background: navy;
+  position: absolute;
+  right: 160px;
+  transform: rotate(90deg);
+}
+
+.class-7 {
+  height: 10px;
+  width: 20vh;
+  top: 46vh;
+  background: navy;
+  position: absolute;
+  right: 245px;
+  transform: rotate(20deg);
+}
+
+.class-8 {
+  height: 10px;
+  width: 20vh;
+  top: 46vh;
+  background: navy;
+  position: absolute;
+  right: 125px;
+  transform: rotate(-20deg);
+}
+
+.class-9 {
+  height: 10px;
+  width: 20vh;
+  top: 64vh;
+  background: navy;
+  position: absolute;
+  right: 131px;
+  transform: rotate(-150deg);
+}
+
+.class-10 {
+  height: 10px;
+  width: 20vh;
+  top: 64vh;
+  background: navy;
+  position: absolute;
+  right: 236px;
+  transform: rotate(150deg);
+}
+
+.chances-counter {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#chances-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: navy;
+}
+
+
+.display-none {
+  display: none;
+}
+
+
+.hint-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hint-container .hint {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Dark transparent background */
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 80%;
+  margin: 5px auto;
+  word-wrap: break-word;
+  /* Ensure long hints wrap nicely */
+}
+
+.hint-container p span {
+  color: #ffd700;
+  /* Highlight specific words or important parts */
+  font-weight: 700;
+}

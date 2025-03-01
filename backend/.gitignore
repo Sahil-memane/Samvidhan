@@ -1,0 +1,18 @@
+/venv
+/temp
+/output
+/temp
+
+# ignore all the __pycache__ directories in the project
+# Ignore Python bytecode files
+*.pyc
+
+# Ignore other common Python files
+__pycache__/
+*.pyo
+*.pyd
+
+# Ignore other files or directories specific to your project
+.env
+.vscode/
+

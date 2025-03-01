@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction to the Legislature</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            height: 130vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 1px 1px 2px #000;
+            background: linear-gradient(to right, #e0e0e0, #ffffff);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #game-area {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 30px; /* Increased margin-top to ensure space for heading */
+        }
+        #sections, #descriptions {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .section, .description {
+            border: 2px solid #ddd;
+            padding: 20px;
+            width: 220px;
+            height: 120px;
+            margin: 10px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+        .section {
+            border-color: #4CAF50;
+            background-color: #e8f5e9;
+            cursor: pointer;
+        }
+        .description {
+            border-color: #2196F3;
+            background-color: #e3f2fd;
+        }
+        .section:hover {
+            background-color: #c8e6c9;
+        }
+        .description:hover {
+            background-color: #bbdefb;
+        }
+        #message {
+            display: none;
+            font-size: 20px;
+            color: #4CAF50;
+            background-color: #f1f8e9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Introduction to the Legislature</h2>
+        <div id="game-area">
+            <p>Drag each section to its corresponding description:</p>
+            <div id="sections">
+                <div
+                    id="section1"
+                    class="section"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                >
+                    &#128214; What is the Legislature?
+                </div>
+                <div
+                    id="section2"
+                    class="section"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                >
+                    &#128196; Structure of the Legislature
+                </div>
+                <div
+                    id="section3"
+                    class="section"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                >
+                    &#128240; Role and Functions
+                </div>
+                <div
+                    id="section4"
+                    class="section"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                >
+                    &#128218; Key Components
+                </div>
+                <div
+                    id="section5"
+                    class="section"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                >
+                    &#128204; How to Engage
+                </div>
+                <div
+                    id="section6"
+                    class="section"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                >
+                    &#128293; Legislative Process
+                </div>
+                <div
+                    id="section7"
+                    class="section"
+                    draggable="true"
+                    ondragstart="drag(event)"
+                >
+                    &#128077; Representation
+                </div>
+            </div>
+            <div id="descriptions">
+                <div
+                    id="description1"
+                    class="description"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                >
+                    Responsible for making laws, representing the people, and overseeing the Executive.
+                </div>
+                <div
+                    id="description2"
+                    class="description"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                >
+                    Bicameral, composed of the Lok Sabha and Rajya Sabha.
+                </div>
+                <div
+                    id="description3"
+                    class="description"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                >
+                    Voting, petitions, public consultations, and RTI are ways to engage.
+                </div>
+                <div
+                    id="description4"
+                    class="description"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                >
+                    Includes law-making, representation, and oversight of the Executive.
+                </div>
+                <div
+                    id="description5"
+                    class="description"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                >
+                    Parliament sessions, committees, and their detailed examinations of issues.
+                </div>
+                <div
+                    id="description6"
+                    class="description"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                >
+                    Process from proposal to approval and implementation.
+                </div>
+                <div
+                    id="description7"
+                    class="description"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)"
+                >
+                    Elected representatives voice concerns and act on behalf of their constituents.
+                </div>
+            </div>
+            <div id="message">Congratulations! You have successfully matched all sections.</div>
+        </div>
+        <script>
+        const correctMatches = {
+            'section1': 'description4',
+            'section2': 'description2',
+            'section3': 'description1',
+            'section4': 'description5',
+            'section5': 'description3',
+            'section6': 'description6',
+            'section7': 'description7'
+        };
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            var droppedElement = document.getElementById(data);
+            var targetElement = ev.target;
+            
+            // Check if the drop target is a description and if it already contains a section
+            if (targetElement.classList.contains('description') && targetElement.children.length === 0) {
+                targetElement.appendChild(droppedElement);
+                checkCompletion();
+            }
+        }
+
+        function checkCompletion() {
+            let allCorrect = true;
+
+            Object.keys(correctMatches).forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                const descriptionId = correctMatches[sectionId];
+                const description = document.getElementById(descriptionId);
+                
+                if (description.children.length === 0 || description.children[0] !== section) {
+                    allCorrect = false;
+                }
+            });
+
+            if (allCorrect) {
+                document.getElementById('message').style.display = 'block';
+            }
+        }
+        </script>
+    </body>
+</html>
