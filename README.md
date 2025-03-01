@@ -84,6 +84,10 @@ Special thanks to all contributors and the support team for making this project 
 
 **Developed by:** [Sahil Memane](https://github.com/Sahil-memane) & Team 🚀
 
+**Contributors:**  
+- [Onkar Nanaware](https://github.com/OnkarNanaware)
+
+
 ## 📢 Additional Notes
 - The project leverages AI-powered storytelling and gamification to simplify complex constitutional concepts.
 - Regular updates will be pushed to improve functionality and add new features.
