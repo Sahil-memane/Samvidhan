@@ -84,8 +84,6 @@ Special thanks to all contributors and the support team for making this project 
 
 **Developed by:** [Sahil Memane](https://github.com/Sahil-memane) & Team 🚀
 
-**Contributors:**  
-- [Onkar Nanaware](https://github.com/OnkarNanaware)
 
 
 ## 📢 Additional Notes
