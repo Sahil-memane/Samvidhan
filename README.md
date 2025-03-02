@@ -82,9 +82,9 @@ This project is open-source and available under the **MIT License**.
 ## ✨ Acknowledgments
 Special thanks to all contributors and the support team for making this project a reality!
 
-**Developed by:** [Sahil Memane](https://github.com/Sahil-memane) & Team 🚀
-
-
+**Developed by:** 
+[Sahil Memane](https://github.com/Sahil-memane)
+[Onkar Nanaware](https://github.com/OnkarNanaware)
 
 ## 📢 Additional Notes
 - The project leverages AI-powered storytelling and gamification to simplify complex constitutional concepts.
