@@ -72,7 +72,7 @@ def get_response():
 
     # Initialize the model with safety settings
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-pro",
+        model_name="gemini-1.5-flash",
         safety_settings=safety_settings
     )
 
@@ -123,7 +123,7 @@ def generate_story():
 
     # Initialize and use the model to generate the story
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-pro",
+        model_name="gemini-1.5-flash",
         safety_settings=safety_settings
     )
 
