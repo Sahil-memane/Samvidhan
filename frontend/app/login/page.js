@@ -6,13 +6,14 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, query, where, getDocs } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBuJT54xuL7_r5YEDg3AUJhEyGRVIWbulE",
-  authDomain: "samvidhan-67220.firebaseapp.com",
-  projectId: "samvidhan-67220",
-  storageBucket: "samvidhan-67220.firebasestorage.app",
-  messagingSenderId: "322714689868",
-  appId: "1:322714689868:web:c1817f095febb4075f2fe9"
+  apiKey: "AIzaSyCfnnz1vFERwo-ShgZeYgEDuFWhT66Zlmg",
+  authDomain: "samvidhan-d9594.firebaseapp.com",
+  projectId: "samvidhan-d9594",
+  storageBucket: "samvidhan-d9594.firebasestorage.app",
+  messagingSenderId: "424163548897",
+  appId: "1:424163548897:web:02347f7ddf4cdf21d161a0"
 };
+
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);

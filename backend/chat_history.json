@@ -458,5 +458,60 @@
         "user_message": "hi",
         "response": "hi\n",
         "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I understand.  Ask me your questions about the Constitution of India.  I will only answer questions directly related to its content and structure, and if my answer lacks relevant constitutional keywords, I will let you know.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready.  Ask me your questions about the Constitution of India.  I will only answer questions directly related to its contents and will let you know if your question falls outside that scope.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "what is article 31",
+        "response": "Article 31 of the Constitution of India, as it originally stood, dealt with **right to property**.  However, it was **repealed** by the Constitution (Twenty-fifth Amendment) Act, 1971.  While the right to property no longer exists as a fundamental right, it is now a **legal right** under Article 300A, added by the same amendment.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Ask away!  I will only respond if the question and my answer involve relevant constitutional keywords. If a question or my answer lacks such keywords, I will inform you accordingly.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to its contents and structure. If a question is outside this scope, or if my answer doesn't contain relevant constitutional keywords, I will let you know.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Indian Constitution and will inform you if your question does not contain relevant constitutional keywords.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Indian Constitution and will let you know if a question is outside my purview.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Indian Constitution and will let you know if a question is outside my scope.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "what is article 21",
+        "response": "Article 21 of the Constitution of India guarantees the right to life and personal liberty to all persons.  It states that no person shall be deprived of his life or personal liberty except according to the procedure established by law.  This is a fundamental right, enforceable by the courts.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "fundamental rights",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  I will focus on providing answers related to the Constitution and will specifically mention relevant constitutional keywords when applicable, such as \"fundamental rights.\"  If my answer doesn't contain relevant constitutional keywords, I will inform you.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Constitution and will inform you if my answer lacks relevant constitutional keywords.\n",
+        "feedback": "Message from the user"
     }
 ]
