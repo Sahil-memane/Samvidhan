@@ -60,7 +60,10 @@ def get_response():
     language = data["language"]
 
     # Configure the Gemini API key
-    genai.configure(api_key="AIzaSyBTviMTxz0Jqu6UVYChQvCKDuWvf26LbI4")
+    api_key = os.getenv("GENAI_API_KEY")
+
+# Configure genai with the API key
+    genai.configure(api_key=api_key)
 
     # Set up safety settings
     safety_settings = [
@@ -109,7 +112,10 @@ def generate_story():
     text = data['text']
 
     # Initialize the API key and configure the Generative AI model
-    genai.configure(api_key="AIzaSyBTviMTxz0Jqu6UVYChQvCKDuWvf26LbI4")
+    api_key = os.getenv("GENAI_API_KEY")
+
+# Configure genai with the API key
+    genai.configure(api_key=api_key)
     
 
     # Set up the model with generation configuration and safety settings

@@ -513,5 +513,75 @@
         "user_message": "hi",
         "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Constitution and will inform you if my answer lacks relevant constitutional keywords.\n",
         "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Please ask.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "what are the fudamental rights of citizens",
+        "response": "The Fundamental Rights of citizens in India, as enshrined in Part III (Articles 12-35) of the Constitution of India, are:\n\n1. **Right to Equality (Articles 14-18):**  Includes equality before the law, prohibition of discrimination on grounds of religion, race, caste, sex or place of birth, equality of opportunity in matters of public employment, and abolition of titles.\n\n2. **Right to Freedom (Articles 19-22):**  Includes freedom of speech and expression, assembly, association, movement, residence, and profession or occupation; subject to reasonable restrictions.  It also guarantees protection against arrest and detention in certain circumstances.\n\n3. **Right against Exploitation (Articles 23-24):**  Prohibits traffic in human beings, forced labour, and child labour.\n\n4. **Right to Freedom of Religion (Articles 25-28):** Guarantees freedom of conscience and free profession, practice, and propagation of religion; subject to public order, morality, health, and other provisions.\n\n5. **Cultural and Educational Rights (Articles 29-30):** Protects the rights of minorities to conserve their own culture and language and to establish and administer educational institutions of their choice.\n\n6. **Right to Constitutional Remedies (Article 32):**  Guarantees the right to move the Supreme Court for the enforcement of the Fundamental Rights.  This is considered the \"heart and soul\" of the Constitution.\n\n\nThese are the core Fundamental Rights.  Keep in mind that there are limitations and exceptions to these rights as defined within the articles themselves.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Please ask.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Constitution and will let you know if a question is outside my scope.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Constitution and will let you know if a question falls outside that scope.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Please ask.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Ask away!\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Please ask.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the text and structure of the Indian Constitution. If a question is not directly related to the Constitution, or my answer doesn't include relevant constitutional keywords, I will let you know.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to its content and structure.  If a question doesn't involve relevant constitutional keywords or concepts, I will let you know.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "what is article 31",
+        "response": "Article 31 of the Constitution of India, as it originally stood, dealt with the **right to property**.  It guaranteed that no person shall be deprived of his property save by authority of law.  However, this article was **repealed** by the **44th Amendment Act of 1978**.  The right to property is now a **legal right** under Article 300A, not a fundamental right.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hello",
+        "response": "Hello.  I'm ready to answer your questions about the Constitution of India. Please proceed.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Ask away!  I will only respond if my answer directly relates to the Indian Constitution and includes relevant constitutional keywords or concepts. If not, I will let you know.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Indian Constitution and will let you know if your question doesn't involve relevant constitutional keywords.\n",
+        "feedback": "Message from the user"
     }
 ]
