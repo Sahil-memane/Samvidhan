@@ -11,7 +11,7 @@ const RecentProjects = () => {
   return (
     <div className=" items-center justify-center">
        <h1 className="text-5xl font-bold text-center ">
-                Project Features
+                Core Functionalities
             </h1>
 
       <div className=" grid grid-cols-3 grid-rows-2 items-center justify-center ml-32">

@@ -4,7 +4,7 @@ export default function ProjectFeatures() {
     return (
         <div>
             <h1 className="text-5xl font-bold text-center mt-40">
-                Project Features
+            Core Functionalities
             </h1>
             <div className="grid grid-cols-2 gap-9 w-fit m-20 mx-auto">
                 <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105">
@@ -55,7 +55,7 @@ export default function ProjectFeatures() {
                     <a href="#">
                         <img
                             class="rounded-t-lg"
-                            src="/images/features/feature2.jpg"
+                            src="/feature2.jpg"
                             alt=""
                             className="object-cover w-full h-56 rounded-t-lg"
                         />
@@ -99,8 +99,7 @@ export default function ProjectFeatures() {
                     <a href="#">
                         <img
                             class="rounded-t-lg"
-                            src="/images/features/feature3.jpeg"
-                            alt=""
+                            src="/feature3.jpg"
                             className="object-cover w-full h-56 rounded-t-lg"
                         />
                     </a>
@@ -142,7 +141,7 @@ export default function ProjectFeatures() {
                     <a href="#">
                         <img
                             class="rounded-t-lg"
-                            src="/images/features/feature4.jpg"
+                            src="/images/features/feature4.jpeg"
                             alt=""
                             className="object-cover w-full h-56 rounded-t-lg"
                         />

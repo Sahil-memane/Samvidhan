@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <div
             className="bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center relative"
-            style={{ backgroundImage: "url('/hero-section-bg.jpg')" }}
+            style={{ backgroundImage: "url('/back3.jpg')" }}
         >
             <div className="absolute inset-0 bg-black opacity-60"></div>
 

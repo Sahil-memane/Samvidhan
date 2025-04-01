@@ -1,5 +1,15 @@
 {
   "pages": {
+    "/chatbot/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/chatbot/page.js"
+    ],
+    "/chatbot/loading": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/chatbot/loading.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -11,15 +21,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/games/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/games/page.js"
+      "static/chunks/app/about/page.js"
     ],
-    "/games/loading": [
+    "/about/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/games/loading.js"
+      "static/chunks/app/about/loading.js"
     ],
     "/explore/page": [
       "static/chunks/webpack.js",
@@ -30,31 +40,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/explore/loading.js"
-    ],
-    "/leaderboard/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/leaderboard/page.js"
-    ],
-    "/learn/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learn/page.js"
-    ],
-    "/learn/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learn/loading.js"
-    ],
-    "/about/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/page.js"
-    ],
-    "/about/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/loading.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

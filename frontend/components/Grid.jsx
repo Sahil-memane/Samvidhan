@@ -26,7 +26,7 @@ export default function Grid() {
             </div>
             <div className="col-span-2 rounded-lg border border-black">
                 <img 
-                    src="/images/home/bg4.png" 
+                    src="/images/home/Ministry_of_Law_and_Justice.svg" 
                     alt="Background with some artistic content" 
                     className="object-contain h-full w-full rounded-lg" 
                 />

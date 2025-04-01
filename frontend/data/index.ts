@@ -93,7 +93,7 @@ export const projects = [
     id: 3,
     title: "Scenario Based Solution",
     des: "Explore scenario-based questions to deepen your understanding of the Indian Constitution through interactive and contextual challenges.",
-    img: "feature3.jpeg",
+    img: "/feature3.jpg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/scenario",
   },

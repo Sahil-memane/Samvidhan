@@ -46,20 +46,32 @@ export default function Page({ params }) {
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
               <div className="lg:max-w-md">
                 <div className="px-4 pl-4 mb-6 border-l-4 border-blue-500">
-                <span class="text-sm text-gray-600 uppercase dark:text-gray-400">
-                  Who we are?
-                </span>
-                <h1 class="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300">
-                  About Us
-                </h1>
+                  <span class="text-sm text-gray-600 uppercase dark:text-gray-400">
+                    Who we are?
+                  </span>
+                  <h1 class="mt-2 text-3xl font-black text-gray-700 md:text-5xl dark:text-gray-300">
+                    About Us
+                  </h1>
                 </div>
                 <p class="px-4 mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
-                  Welcome to <strong>Sansthae and Samvidhan</strong>, your essential platform 
-                  for understanding the Constitution of India. We recognize the critical role 
-                  the Constitution plays in our democracy, yet its complex language and concepts 
-                  often create a barrier for many. Our mission is to bridge this gap by presenting 
-                  the Legislature, Executive, and Judiciary in a simplified and gamified manner, 
-                  making this vital knowledge accessible and interesting for everyone.
+                  Welcome to <strong>Samvidhan</strong>, your essential platform
+                  for understanding the Constitution of India. We recognize the
+                  critical role the Constitution plays in our democracy, yet its
+                  complex language and concepts often create a barrier for many.
+                  Our mission is to bridge this gap by presenting the
+                  Legislature, Executive, and Judiciary in a simplified and
+                  gamified manner, making this vital knowledge accessible and
+                  interesting for everyone. 
+                  
+                  At <strong>Samvidhan</strong>, we
+                  believe that learning about the Constitution should be
+                  engaging and interactive. Through quizzes, real-life case
+                  studies, and scenario-based challenges, we empower users to
+                  grasp fundamental legal and governance principles
+                  effortlessly. Whether you are a student, a legal enthusiast,
+                  or a curious citizen, our platform equips you with the
+                  knowledge to navigate and appreciate the framework that
+                  upholds our democracy.
                 </p>
 
                 <div className="flex flex-wrap items-center">
@@ -125,20 +137,19 @@ export default function Page({ params }) {
                     </li>
                     <li className="pb-2">
                       <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold">
-                      Sahil Memane
+                        Sahil Memane
                       </a>
                     </li>
                     <li className="pb-2">
                       <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold">
-                      Supriya Mulik
+                        Supriya Mulik
                       </a>
                     </li>
                     <li className="pb-2">
                       <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold">
-                      Srushti Midgule
+                        Srushti Midgule
                       </a>
                     </li>
-                    
                   </ul>
                 </div>
               </div>
@@ -147,7 +158,11 @@ export default function Page({ params }) {
           <hr className="my-6 border-blueGray-300" />
           <div className="flex flex-col items-center bg-neutral-300 p-2">
             <p className="text-blueGray-500 text-sm text-center sm:text-left">
-              © 2024 <a href="#" className="text-blueGray-600 hover:text-blueGray-800">Samvidhan</a>. All rights reserved.
+              © 2024{" "}
+              <a href="#" className="text-blueGray-600 hover:text-blueGray-800">
+                Samvidhan
+              </a>
+              . All rights reserved.
             </p>
           </div>
         </div>
