@@ -23,6 +23,7 @@ from mario.main import Core
 from vr_convertor import vr_convertor
 from moviepy.editor import VideoFileClip, clips_array
 from firebase_admin import credentials, firestore, initialize_app
+from multiprocessing import Process
 
 app = Flask(__name__)
 CORS(app)
@@ -195,6 +196,10 @@ def run_game_2():
 
     while True:
         success, img = cap.read()
+        if not success or img is None:
+            print("Error: Failed to capture image. Skipping frame...")
+            continue  # Skip this iteration if no valid image is captured
+
         img = cv2.flip(img, 1)
         hands, img = detector.findHands(img, flipType=False)
 
@@ -229,26 +234,22 @@ def run_game_2():
             # Update Firestore with the score
             username = get_username()
             if username:
-            # Query Firestore for the document with the matching username
                 user_docs = db.collection("users").where("username", "==", username).stream()
 
                 doc_found = False
                 for doc in user_docs:
-                    doc_id = doc.id  # Get the document ID
-                    doc_data = doc.to_dict()  # Get the document data
-
-                    # Get the previous score, default to 0 if not found
+                    doc_id = doc.id
+                    doc_data = doc.to_dict()
                     previous_score = doc_data.get("score", 0)
                     updated_score = previous_score + score_in_marks
 
-                    # Update the Firestore document with the new score
                     db.collection("users").document(doc_id).update({
                         "score": updated_score,
-                        "timestamp": firestore.SERVER_TIMESTAMP,  # Optionally update timestamp
+                        "timestamp": firestore.SERVER_TIMESTAMP,
                     })
                     print(f"Updated Firestore: Username={username}, Previous Score={previous_score}, Added Score={score_in_marks}, New Score={updated_score}")
                     doc_found = True
-                    break  # Exit loop after updating the first matching document
+                    break
 
                 if not doc_found:
                     print(f"No existing document found for username: {username}")
@@ -256,9 +257,12 @@ def run_game_2():
                 print("Failed to update Firestore: Username not found")
 
             cv2.imshow("Img", img)
-            time.sleep(5)
-            break
+            cv2.waitKey(1)  # Ensure the window updates before closing
 
+            time.sleep(5)  # Wait 5 seconds before closing everything
+            cap.release()
+            cv2.destroyAllWindows()
+            os._exit(0)  # Terminate the process
 
         barValue = 150 + (950 // qTotal) * qNo
         cv2.rectangle(img, (150, 600), (barValue, 650), (0, 255, 0), cv2.FILLED)
@@ -273,7 +277,8 @@ def run_game_2():
 
     cap.release()
     cv2.destroyAllWindows()
-    return "Game 2 finished"
+    os._exit(0)  # Ensure process termination
+
 
 
 @app.route('/start-game-1', methods=['POST'])
@@ -300,11 +305,16 @@ def start_game_2():
 
     if not username:
         return jsonify({"error": "Username is required"}), 400
+
     with open("username.txt", "w") as f:
         f.write(username)
+
     print(f"Starting Quiz Game for user: {username}")
-    quiz_thread = threading.Thread(target=run_game_2)
-    quiz_thread.start()
+    
+    # Run game in a separate process (not a thread)
+    quiz_process = Process(target=run_game_2)
+    quiz_process.start()
+
     return jsonify({"message": "Quiz game started!", "username": username})
 @app.route('/game-status', methods=['GET'])
 def game_status():
