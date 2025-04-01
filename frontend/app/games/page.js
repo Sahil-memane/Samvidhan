@@ -12,69 +12,85 @@ export default function Page() {
       description: 'Constitution Mario is an educational adventure game designed to blend the excitement of classic platformers with the principles of constitutional literacy. In this engaging game, players navigate through vibrant levels inspired by iconic platformers, encountering challenges and puzzles that teach them about the fundamental aspects of constitutional law.',
       endpoint: 'start-game-1',
       image: "/mario.jpg",
-      color: 'from-blue-600 to-purple-600'
+      color: 'from-purple-700 to-indigo-700'
     },
     {
       title: 'Sanvidhan Prashnamala',
       description: 'Sanvidhan Prashnamala is an interactive quiz game designed to test and expand your knowledge of the Indian Constitution. Players answer thought-provoking questions on constitutional topics and explore key historical and legal facts, ensuring a fun and informative experience.',
       endpoint: 'start-game-2',
       image: "/gesture.jpg",
-      color: 'from-green-600 to-teal-600'
+      color: 'from-green-700 to-teal-700'
     },
     {
       title: 'Constitutional Termix',
       description: 'Constitutional Termix merges the thrill of a classic block puzzle game with learning. Arrange falling blocks to form terms and concepts related to constitutional law. Sharpen your skills while broadening your understanding of vital legal principles.',
       endpoint: '/play-game-4',
       image: "/123.jpg",
-      color: 'from-orange-600 to-red-600'
-    }
-];
+      color: 'from-orange-700 to-red-700'
+    },
+    {
+      title: "Justice Defender",
+      description: "Step into the courtroom as a lawyer defending constitutional rights.",
+      endpoint: "start-justice-defender",
+      path: "/games/justice-defender",
+      image: "/justice.jpg",
+      color: "from-red-700 to-yellow-700",
+    },
+    {
+      title: "Fundamental Rights Explorer",
+      description:
+        "Explore different real-life scenarios and make choices based on fundamental rights.",
+      endpoint: "start-fundamental-rights-explorer",
+      path: "/games/fundamental-rights-explorer",
+      image: "/rights.jpg",
+      color: "from-indigo-700 to-blue-700",
+    },
+    {
+      title: "Election Strategy Board",
+      description:
+        "Election Strategy Builder puts you in charge of a political campaign, where you strategically balance resources and voter influence across diverse districts.",
+      endpoint: "start-democracy-builder",
+      path: "/games/democracy-builder",
+      image: "/democracy.jpg",
+      color: "from-yellow-700 to-green-700",
+    },
+  ];
 
-
-    const HandleClick = async (endpoint) => {
-      try {
-        // Retrieve the username from local storage
-        const username = localStorage.getItem("username");
-
-        if (!username) {
-          console.error("Username not found in local storage");
-          alert("Please log in to continue.");
-          return;
-        }
-
-        // Send the POST request with the username in the body
-        const response = await fetch(`http://localhost:5000/${endpoint}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ username }), // Send the username in the request body
-        });
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        // Handle the response
-        const data = await response.json();
-        console.log("Response data:", data);
-      } catch (error) {
-        console.error('Error:', error);
+  const HandleClick = async (endpoint) => {
+    try {
+      const username = localStorage.getItem("username");
+      if (!username) {
+        console.error("Username not found in local storage");
+        alert("Please log in to continue.");
+        return;
       }
-    };
-
+      const response = await fetch(`http://localhost:5000/${endpoint}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username }),
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log("Response data:", data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
+    <div className="min-h-screen bg-gradient-to-b from-gray-800 to-gray-700">
       <NavBar />
-      
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text mb-4">
-            Learn About Constitution in a Fun Way
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-indigo-500 text-transparent bg-clip-text mb-4">
+            Experience Constitutional Learning Like Never Before!
           </h1>
           <p className="text-gray-300 text-xl">
-            Discover interactive games that make learning constitutional concepts engaging and memorable
+            Explore engaging, interactive games that make understanding the constitution exciting and insightful.
           </p>
         </div>
 
@@ -103,9 +119,12 @@ export default function Page() {
                     </p>
                   </div>
                   
-                  <Link 
-                    href={game.title === "Constitutional Termix" ? "/games/constitutionaltermix" : 
-                          game.title === "Spin the Wheel" ? "/games/spinthewheel" : "#"}
+                  <Link href={
+                      game.title === "Constitutional Termix" ? "/games/constitutionaltermix" :
+                      game.title === "Justice Defender" ? "/games/justice-defender" : 
+                      game.title === "Fundamental Rights Explorer" ? "/games/fundamental-rights-explorer" : 
+                      game.title === "Election Strategy Board" ? "/games/election-strategy-builder" : "#"
+                    }
                   >
                     <button
                       className={`w-full py-3 px-6 rounded-xl bg-gradient-to-r ${game.color} 

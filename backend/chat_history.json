@@ -583,5 +583,40 @@
         "user_message": "hi",
         "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Indian Constitution and will let you know if your question doesn't involve relevant constitutional keywords.\n",
         "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Ask away!\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Constitution and will let you know if a question falls outside that scope.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "article 21",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  I will focus on providing answers related to the Indian Constitution and will only respond if the question involves relevant constitutional keywords or articles. If a question doesn't relate to the Indian Constitution or lacks relevant constitutional keywords, I will inform you accordingly.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready. Ask me your questions about the Constitution of India.  I will only answer questions directly related to the Constitution and will let you know if a question is outside my scope.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "article 21",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  I will focus my answers on relevant constitutional provisions and keywords.  Please proceed with your questions.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Ask away!  I will only respond if the question and answer directly relate to the Indian Constitution and include relevant constitutional keywords.  If not, I will inform you.\n",
+        "feedback": "Message from the user"
+    },
+    {
+        "user_message": "hi",
+        "response": "Okay, I'm ready to answer your questions about the Constitution of India.  Please ask.\n",
+        "feedback": "Message from the user"
     }
 ]

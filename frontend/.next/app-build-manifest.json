@@ -11,15 +11,30 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/chatbot/page": [
+    "/games/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/chatbot/page.js"
+      "static/chunks/app/games/page.js"
     ],
-    "/chatbot/loading": [
+    "/games/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/chatbot/loading.js"
+      "static/chunks/app/games/loading.js"
+    ],
+    "/games/justice-defender/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/games/justice-defender/page.js"
+    ],
+    "/games/fundamental-rights-explorer/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/games/fundamental-rights-explorer/page.js"
+    ],
+    "/games/election-strategy-builder/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/games/election-strategy-builder/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

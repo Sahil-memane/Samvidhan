@@ -1,5 +1,9 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
-  "/chatbot/page": "app/chatbot/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/games/page": "app/games/page.js",
+  "/games/justice-defender/page": "app/games/justice-defender/page.js",
+  "/games/fundamental-rights-explorer/page": "app/games/fundamental-rights-explorer/page.js",
+  "/games/election-strategy-builder/page": "app/games/election-strategy-builder/page.js"
 }
