@@ -22,7 +22,9 @@
     "react-pageflip": "^2.0.3",
     "react-pdf": "^9.1.0",
     "spin-wheel-game": "^1.0.3-alpha.3",
-    "tailwind-merge": "^2.5.2"
+    "tailwind-merge": "^2.5.2",
+    "lucide-react": "^0.356.0"
+
   },
   "devDependencies": {
     "@types/react": "19.0.12",
