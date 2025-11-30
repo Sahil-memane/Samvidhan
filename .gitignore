@@ -1,4 +1,4 @@
-frontend/.next/cache/
-frontend/node_modules/
 frontend/.next/
-backend/chat_history.json
+frontend/.next/cache/
+frontend/.next/server/
+frontend/node_modules/
