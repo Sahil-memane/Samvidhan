@@ -76,7 +76,7 @@ def get_response():
 
     # Initialize the model with safety settings
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-2.5-flash",
         safety_settings=safety_settings
     )
 
@@ -130,12 +130,12 @@ def generate_story():
 
     # Initialize and use the model to generate the story
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-2.5-flash",
         safety_settings=safety_settings
     )
 
     convo = model.start_chat(history=[])
-    convo.send_message(f"Give me a very short and simple story to understand this article: {text}")
+    convo.send_message(f"Give me a very short and simple story to understand this article. Use indian context and indian names: {text}")
 
     # Return the generated story
     return jsonify({"story": convo.last.text})

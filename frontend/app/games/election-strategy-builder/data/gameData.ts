@@ -119,6 +119,7 @@ export const initialDistricts: District[] = [
       'Business-friendly policies',
       'Traffic management',
       'Air quality improvement',
+      'water problem',
       'Public transportation',
       'Digital services'
     ],

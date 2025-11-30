@@ -13,8 +13,8 @@
 - **AI Integration** – Google Gemini APIs for interactive storytelling.
 
 ## 🔧 Technologies Used
-- **Frontend:** Next.js, React, Node.js
-- **Backend:** Flask, Next.js, Python
+- **Frontend:** Next.js, React
+- **Backend:** Flask, Next.js
 - **Database:** Firebase (Real-time Data)
 - **Gaming:** Phaser.js, Three.js (for 2D & 3D games)
 - **AI Integration:** Google Gemini APIs
@@ -50,7 +50,7 @@ Make sure you have the following installed:
 ```sh
  cd backend
  pip install -r requirements.txt  # Install Python dependencies
- python app.py  # Start the backend server
+ python server.py  # Start the backend server
 ```
 **Backend will be available at:** `http://localhost:5000`
 

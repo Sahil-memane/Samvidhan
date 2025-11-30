@@ -1,7 +1,11 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/chatbot/page": "app/chatbot/page.js",
+  "/leaderboard/page": "app/leaderboard/page.js",
+  "/learn/page": "app/learn/page.js",
+  "/about/page": "app/about/page.js",
   "/explore/page": "app/explore/page.js",
-  "/about/page": "app/about/page.js"
+  "/page": "app/page.js",
+  "/learn/legislature/page": "app/learn/legislature/page.js",
+  "/learn/legislature/struct/page": "app/learn/legislature/struct/page.js",
+  "/learn/legislature/quiz/page": "app/learn/legislature/quiz/page.js"
 }
